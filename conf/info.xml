@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">No Act!</title>
+	<description xml:lang="ko">
+		사용하지 않는 act 접근을 차단하는 애드온입니다.
+	</description>
+
+	<version>0.3</version>
+	<date>2016-08-22</date>
+
+	<author email_address="admin@wincomi.com" link="http://www.wincomi.com/">
+		<name xml:lang="ko">윈컴이</name>
+		<name xml:lang="en">Wincomi</name>
+	</author>
+	
+	<extra_vars>
+		<var name="act_list" type="text">
+			<title xml:lang="ko">차단할 act 이름</title>
+			<description xml:lang="ko">쉼표로 구분합니다.</description>
+		</var>
+		<var name="msg" type="select">
+			<title xml:lang="ko">메시지</title>
+			<description xml:lang="ko">차단된 act로 접근시 표시할 메시지를 선택하세요.</description>
+			<options value="">
+				<title xml:lang="ko">메시지 직접 입력</title>
+			</options>
+			<options value="msg_invalid_request">
+				<title xml:lang="ko">잘못된 요청입니다. (msg_invalid_request)</title>
+			</options>
+			<options value="msg_not_permitted">
+				<title xml:lang="ko">권한이 없습니다. (msg_not_permitted)</title>
+			</options>
+			<options value="msg_error_occured">
+				<title xml:lang="ko">오류가 발생했습니다. (msg_error_occured)</title>
+			</options>
+			<options value="msg_not_founded">
+				<title xml:lang="ko">대상을 찾을 수 없습니다. (msg_not_founded)</title>
+			</options>
+			<options value="msg_not_permitted_act">
+				<title xml:lang="ko">요청한 기능을 실행할 수 있는 권한이 없습니다. (msg_not_permitted_act)</title>
+			</options>
+			<options value="msg_module_is_not_exists">
+				<title xml:lang="ko">요청한 페이지를 찾을 수 없습니다. 사이트 관리자에게 문의해 주세요. (msg_module_is_not_exists)</title>
+			</options>
+		</var>
+		<var name="msg_custom" type="text">
+			<title xml:lang="ko">메시지 직접 입력</title>
+			<description xml:lang="ko">'메시지 직접 입력'을 선택할 경우 메시지를 직접 입력할 수 있습니다.</description>
+		</var>
+		<var name="except_admin" type="select">
+			<title xml:lang="ko">최고 관리자 제외</title>
+			<description xml:lang="ko">최고 관리자는 설정한 act를 차단하지 않습니다.</description>
+			<options value="N">
+				<title xml:lang="ko">아니오</title>
+			</options>
+			<options value="Y">
+				<title xml:lang="ko">예</title>
+			</options>
+		</var> 
+	</extra_vars>
+</addon>
